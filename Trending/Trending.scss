@@ -1,0 +1,93 @@
+.trending {
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  position: relative; // Thêm dòng nàys
+}
+.hr {
+  margin: 0;
+  margin-top: -1rem;
+  border: 1px solid #3f3f3f;
+}
+.logo {
+  display: flex;
+  color: #f1f1f1;
+  // justify-content: center;
+  align-items: center;
+  height: 4rem;
+  gap: 1rem;
+  img {
+    height: 100%;
+  }
+}
+.sidebarItem {
+  padding: 0.6rem 0;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selected {
+  border-bottom: 2px solid white;
+}
+.header-trending {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-trending {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding-left: 0;
+  margin: 0;
+}
+.videoslist {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.video {
+  display: flex;
+  gap: 1rem;
+}
+.iframe {
+  iframe {
+    border-radius: 0.7rem;
+  }
+}
+.videoInfo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 35%;
+  .title {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .interation {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    color: #aaaaaa;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .describe {
+    display: flex;
+    flex-wrap: wrap;
+    color: #aaaaaa;
+    font-size: 0.8rem;
+  }
+}
