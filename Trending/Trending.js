@@ -55,7 +55,7 @@ export default function Trending() {
           order: "date",
           regionCode: "VN",
           maxResults: "50",
-          key: "AIzaSyA1RadG4fVQhB80uz7g6EYZqSRYp0AnF5o",
+          key: "AIzaSyAKijmnau3YlemypPS4W1J7VecOeR5TTBQ",
         },
       });
 
@@ -67,7 +67,7 @@ export default function Trending() {
         params: {
           part: "snippet, statistics",
           id: videoIds,
-          key: "AIzaSyALqsPow3wkH_HifbNaMLoDBV8mLIUrF3c",
+          key: "AIzaSyAKijmnau3YlemypPS4W1J7VecOeR5TTBQ",
         },
       });
 
@@ -93,7 +93,7 @@ export default function Trending() {
   return (
     <div className="trending">
       <Header isSelected={isSelected} onIsSelected={setIsSelected} />
-
+      <SidebarItemsList isSelected={isSelected} onIsSelected={setIsSelected} />
       <VideosPlayList videos={videos} />
     </div>
   );
@@ -103,7 +103,7 @@ function Header({ isSelected, onIsSelected }) {
   return (
     <div className="header-trending">
       <Logo />
-      <SidebarItemsList isSelected={isSelected} onIsSelected={onIsSelected} />
+      {/* <SidebarItemsList isSelected={isSelected} onIsSelected={onIsSelected} /> */}
     </div>
   );
 }
